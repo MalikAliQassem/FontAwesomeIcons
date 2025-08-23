@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36401.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontAwesomeIconsTools", "FontAwesomeIconsTools\FontAwesomeIconsTools.csproj", "{8F7F5E8C-B673-4AB6-AE76-F09159A037C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestIcons", "TestIcons\TestIcons.csproj", "{748B6919-8259-4A1E-B88A-D76A3BCE2917}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F7F5E8C-B673-4AB6-AE76-F09159A037C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F7F5E8C-B673-4AB6-AE76-F09159A037C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F7F5E8C-B673-4AB6-AE76-F09159A037C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F7F5E8C-B673-4AB6-AE76-F09159A037C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748B6919-8259-4A1E-B88A-D76A3BCE2917}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748B6919-8259-4A1E-B88A-D76A3BCE2917}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748B6919-8259-4A1E-B88A-D76A3BCE2917}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748B6919-8259-4A1E-B88A-D76A3BCE2917}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06B81410-F9B1-4676-8FF9-06C8C87AF56E}
+	EndGlobalSection
+EndGlobal
