@@ -56,10 +56,10 @@ namespace TestIcons
                 FontAwesomeIcon iconControl = new FontAwesomeIcon();
                 if (i == 0)
                 {
-                    iconControl.IconCode = "\uf007";
+                    iconControl.IconCode = "\uf1f8";
                     Button btn = new Button();
                     btn.Size = new Size(100, 100);
-                    btn.Image = FlatIcon.GetIconImage("\uf007", Color.Green,new Size(40,40));
+                    btn.Image = FlatIcon.GetIconImage(FontIcons.Create, Color.Green,new Size(40,40));
                     btn.Text = "ok";
                     btn.ImageAlign = ContentAlignment.MiddleLeft;
                     flowLayoutPanel.Controls.Add(btn);
