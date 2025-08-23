@@ -1,4 +1,5 @@
 using FontAwesomeIconsTools;
+using FontAwesomeIconsTools.Helper;
 
 namespace TestIcons
 {
@@ -53,11 +54,19 @@ namespace TestIcons
             for (int i = 0; i < 200; i++)
             {
                 FontAwesomeIcon iconControl = new FontAwesomeIcon();
-                if(i==0)//f2bd
+                if (i == 0)
+                {
                     iconControl.IconCode = "\uf007";
-              else
-                // Set a random icon code
-                iconControl.IconCode = fontAwesomeIconCodes[random.Next(fontAwesomeIconCodes.Count)];
+                    Button btn = new Button();
+                    btn.Size = new Size(100, 100);
+                    btn.Image = FlatIcon.GetIconImage("\uf007", Color.Green,new Size(40,40));
+                    btn.Text = "ok";
+                    btn.ImageAlign = ContentAlignment.MiddleLeft;
+                    flowLayoutPanel.Controls.Add(btn);
+                }
+                else
+                    // Set a random icon code
+                    iconControl.IconCode = fontAwesomeIconCodes[random.Next(fontAwesomeIconCodes.Count)];
 
                 // Set a random color
                 iconControl.IconColor = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
