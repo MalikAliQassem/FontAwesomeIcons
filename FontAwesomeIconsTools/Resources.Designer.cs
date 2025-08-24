@@ -63,9 +63,29 @@ namespace FontAwesomeIconsTools {
         /// <summary>
         ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
+        internal static byte[] fa_duotone_900 {
+            get {
+                object obj = ResourceManager.GetObject("fa_duotone_900", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
         internal static byte[] fa_regular_400 {
             get {
                 object obj = ResourceManager.GetObject("fa_regular_400", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] fa_solid_900 {
+            get {
+                object obj = ResourceManager.GetObject("fa_solid_900", resourceCulture);
                 return ((byte[])(obj));
             }
         }

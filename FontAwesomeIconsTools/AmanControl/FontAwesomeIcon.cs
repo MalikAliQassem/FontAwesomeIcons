@@ -123,7 +123,24 @@ namespace FontAwesomeIconsTools
                     borderThickness = 0;
             }
         }
+        [Localizable(true)]
+        [Category("fontFamilyType")]
+        [Description("The fontFamilyType of the icon in style.")]
+        [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
+        public IconFontType IconFontType
+        {
+            get { return fontFamilyType; }
+            set
+            {
+                if (value != fontFamilyType)
+                {
+                    fontFamilyType = value;
+                    this.Invalidate();
+                }
+            }
+        }
 
+        IconFontType fontFamilyType= IconFontType.Regular;
         protected override void OnSizeChanged(EventArgs e)
         {
             base.OnSizeChanged(e);
@@ -144,7 +161,7 @@ namespace FontAwesomeIconsTools
             actualIconSize = Math.Max(5, actualIconSize);
 
             // تحديث الخط بحجم الأيقونة الفعلي
-            fontAwesome = AmanManager.GetIconFont(size: actualIconSize);
+            fontAwesome = AmanManager.GetIconFont(size: actualIconSize,fontType: fontFamilyType);
 
             Graphics G = e.Graphics;
             G.SmoothingMode = SmoothingMode.HighQuality;

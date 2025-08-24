@@ -54,6 +54,8 @@ namespace TestIcons
             for (int i = 0; i < 200; i++)
             {
                 FontAwesomeIcon iconControl = new FontAwesomeIcon();
+                FontAwesomeIcon iconControl2 = new FontAwesomeIcon();
+                FontAwesomeIcon iconControl3 = new FontAwesomeIcon();
                 if (i == 0)
                 {
                     iconControl.IconCode = "\uf1f8";
@@ -64,26 +66,46 @@ namespace TestIcons
                     btn.ImageAlign = ContentAlignment.MiddleLeft;
                     flowLayoutPanel.Controls.Add(btn);
                 }
-                else
+                
                     // Set a random icon code
-                    iconControl.IconCode = fontAwesomeIconCodes[random.Next(fontAwesomeIconCodes.Count)];
+                    var code = fontAwesomeIconCodes[random.Next(fontAwesomeIconCodes.Count)];
+                    var iconColor = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
+                    var IconSize = random.Next(10, 101);
+                //iconControl.IconCode = fontAwesomeIconCodes[random.Next(fontAwesomeIconCodes.Count)];
+                iconControl.IconCode = code;
+                iconControl2.IconCode = code;
+                iconControl3.IconCode = code;
 
                 // Set a random color
-                iconControl.IconColor = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
-               //if(i<10)
-               // {
-               //     // Random border thickness between 1 and 5
-               //     iconControl.BorderThickness = random.Next(1, 6); 
-               //     iconControl.BorderColor = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
-               // }
-              
-                // Set a random icon size percentage (1-100)
-                iconControl.IconSize = random.Next(10, 101);
+                iconControl.IconColor= iconColor;
+                iconControl2.IconColor= iconColor;
+                iconControl3.IconColor= iconColor;
+                //iconControl.IconColor = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
+                //if(i<10)
+                // {
+                //     // Random border thickness between 1 and 5
+                //     iconControl.BorderThickness = random.Next(1, 6); 
+                //     iconControl.BorderColor = Color.FromArgb(random.Next(256), random.Next(256), random.Next(256));
+                // }
 
+                // Set a random icon size percentage (1-100)
+                //iconControl.IconSize = random.Next(10, 101);
+
+                iconControl.IconSize= IconSize;
+                iconControl2.IconSize= IconSize;
+                iconControl3.IconSize= IconSize;
+
+                iconControl.IconFontType = IconFontType.Regular;
+                iconControl2.IconFontType =IconFontType.Solid;
+                iconControl3.IconFontType=IconFontType.Duotone;
                 // Set a fixed size for the control itself, so the percentage works relative to this size
                 iconControl.Size = new Size(100, 100); // Each icon control will be 50x50 pixels
+                iconControl2.Size = new Size(100, 100); // Each icon control will be 50x50 pixels
+                iconControl3.Size = new Size(100, 100); // Each icon control will be 50x50 pixels
 
                 flowLayoutPanel.Controls.Add(iconControl);
+                flowLayoutPanel.Controls.Add(iconControl2);
+                flowLayoutPanel.Controls.Add(iconControl3);
             }
         }
     }

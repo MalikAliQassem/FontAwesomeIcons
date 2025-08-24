@@ -15,7 +15,7 @@ namespace FontAwesomeIconsTools.Helper
 
         }
 
-        public static Image GetIconImage(string Icon, Color? IColor = null, Size? size = null, int incFont = 0)
+        public static Image GetIconImage(string Icon, Color? IColor = null, Size? size = null, int incFont = 0,IconFontType? fontType = null)
         {
             //"\uf2b9"
             // إنشاء Font من الخط الذي تم تحميله
