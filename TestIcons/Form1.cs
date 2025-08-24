@@ -49,6 +49,7 @@ namespace TestIcons
             FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
             flowLayoutPanel.Dock = DockStyle.Fill;
             flowLayoutPanel.AutoScroll = true;
+            //flowLayoutPanel.BackColor = Color.Bisque;
             this.Controls.Add(flowLayoutPanel);
 
             for (int i = 0; i < 200; i++)
@@ -97,7 +98,7 @@ namespace TestIcons
 
                 iconControl.IconFontType = IconFontType.Regular;
                 iconControl2.IconFontType =IconFontType.Solid;
-                iconControl3.IconFontType=IconFontType.Duotone;
+                //iconControl3.IconFontType=IconFontType.Duotone;
                 // Set a fixed size for the control itself, so the percentage works relative to this size
                 iconControl.Size = new Size(100, 100); // Each icon control will be 50x50 pixels
                 iconControl2.Size = new Size(100, 100); // Each icon control will be 50x50 pixels
@@ -105,7 +106,7 @@ namespace TestIcons
 
                 flowLayoutPanel.Controls.Add(iconControl);
                 flowLayoutPanel.Controls.Add(iconControl2);
-                flowLayoutPanel.Controls.Add(iconControl3);
+                //flowLayoutPanel.Controls.Add(iconControl3);
             }
         }
     }

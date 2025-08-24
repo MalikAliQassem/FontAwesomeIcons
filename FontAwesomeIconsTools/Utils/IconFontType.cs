@@ -10,6 +10,6 @@ namespace FontAwesomeIconsTools
     {
         Regular,
         Solid,
-        Duotone
+        //Duotone
     }
 }

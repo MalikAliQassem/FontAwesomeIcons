@@ -28,11 +28,11 @@ namespace FontAwesomeIconsTools
             {
                 { IconFontType.Regular,"Font_Awesome_6_Pro_Regular" },
                 { IconFontType.Solid,"Font_Awesome_6_Pro_Solid" },
-                { IconFontType.Duotone,"Font_Awesome_6_Duotone_Solid" },
+                //{ IconFontType.Duotone,"Font_Awesome_6_Duotone_Solid" },
             };
             RobotoFontFamilies = new Dictionary<string, FontFamily>();
             addFont(Resources.fa_regular_400);
-            addFont(Resources.fa_duotone_900);
+            //addFont(Resources.fa_duotone_900);
             addFont(Resources.fa_solid_900);
             LoadIconFonts();
         }
