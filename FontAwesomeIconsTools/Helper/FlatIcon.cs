@@ -25,7 +25,7 @@ namespace FontAwesomeIconsTools.Helper
             if (size == null)
                 size = new Size(100, 100);
             var fSize = (int)Math.Round((Math.Max(size.Value.Width, size.Value.Height) / 100.0M) * 40.0M + incFont);
-            Font fontAwesome = AmanFlatManager.Instance.GetIconFont(size: Math.Max(5, fSize));
+            Font fontAwesome = AmanFlatManager.Instance.GetIconFont(size: Math.Max(5, fSize), fontType: fontType);
             // إنشاء Bitmap لرسم الأيقونة
             Bitmap bitmap = new Bitmap(size.Value.Width, size.Value.Height, System.Drawing.Imaging.PixelFormat.Format32bppArgb); // حجم الصورة 100x100
             using (Graphics g = Graphics.FromImage(bitmap))
